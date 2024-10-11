@@ -23,7 +23,12 @@ let when = [
 
 const generateRandom = arr => Math.floor(Math.random() * arr.length);
 const getValue = arr => arr[generateRandom(arr)];
-console.log(getValue(who));
-console.log(getValue(action));
-console.log(getValue(what));
-console.log(getValue(when));
+console.log(
+  getValue(who) +
+    " " +
+    getValue(action) +
+    " " +
+    getValue(what) +
+    " " +
+    getValue(when)
+);
